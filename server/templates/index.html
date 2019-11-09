@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Printer</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <main>
+        <h1>Print the source</h1>
+        <p>You're logged in as <b>{{ username }}</b>.</p>
+        {% if result %}
+        <div class="{{ result.type }}">{{ result.message }}</div>
+        {% endif %}
+        <form method="POST" action="">
+            <label for="source">Your source</label>
+            <textarea id="source" name="source" required></textarea>
+            <button>Submit</button>
+        </form>
+    </main>
+    <script src="/static/lock.js"></script>
+</body>
+</html>

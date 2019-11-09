@@ -1,0 +1,41 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{listings}
+
+\batchmode 
+
+\geometry{
+ a4paper,
+ total={160mm,247mm},
+ left=25mm,
+ top=25mm,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{%USER%}
+\rhead{%DATE%}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+
+\lstset{ 
+  basicstyle=\ttfamily,
+  basewidth  = {.5em,0.5em},
+  breakatwhitespace=false,
+  breaklines=true,
+  inputencoding=utf8,
+  extendedchars=\true,
+  keepspaces=true,
+  language=C++,
+  numbers=left,
+  tabsize=4,
+}
+
+\begin{document}
+  \lstinputlisting{source.txt}
+\end{document}
+

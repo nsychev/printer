@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+main {
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 800px;
+
+    padding: 2em;
+}
+
+label, textarea, button {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 200px;
+
+    border-radius: 5px;
+
+    font-size: inherit;
+}
+
+button {
+    padding: 0.5em 1.5em;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #ddd;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button[disabled] {
+    background-color: #bbb;
+    cursor: none;
+}
+
+div {
+    padding: 0.6em;
+    margin-bottom: 1em;
+
+    border-radius: 5px;
+}
+
+.error {
+    border: 1px solid #f88;
+    background-color: #fdd;
+}
+
+.success {
+    border: 1px solid #8f8;
+    background-color: #dfd;
+}
